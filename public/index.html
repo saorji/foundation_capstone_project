@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbys Hotels</title>
+    <link rel="stylesheet" href="index.css">  
+
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Arbys</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="/video.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <aside class="content">
+    
+            <form>
+                <h2 id="welcome">Welcome</h2>
+                <h3>Remember to clock-in/out</h3>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/529582/img_avatar3.png" id="pic">
+                <label for="firtname-input">First Name:</label>
+                <input type="text" id="name-input"/>
+    
+                <label for="pascode">Enter Passcode:</label>
+                <input type="password" id="passcode-input"/>
+    
+                <div id="btn">
+                    <button id="clockin">clock-in</button>
+                    <button id="clockout">clock-out</button>
+        
+                </div>
+                
+            </form>
+            <a class="results" id="result">
+                <h3 class="currentTime">Current time is: <span id="time"></span></h3>
+                <span id="clockin-details"></span>
+            </a>
+        </aside>
+        <!-- <ul class="social">
+            <li><a href="#"><img src="/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="/twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="/instagram.png" alt="instagram"></a></li>
+        </ul> -->
+        
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
