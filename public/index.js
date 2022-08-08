@@ -6,11 +6,23 @@ const clockout = document.getElementById('clockout')
 const set =document.getElementById('time')
 const menuToggle = document.querySelector('.toggle')
 const showcase = document.querySelector('.showcase')
+const popup = document.getElementById('design')
+const loginBtn = document.getElementById('popbtn')
 
 menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active')
     showcase.classList.toggle('active')
 })
+
+function openPopup(){
+    popup.classList.add("open-popup");
+    showcase.classList.toggle('active')
+    menuToggle.classList.toggle('active')
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
 
 function timer () {
     var datetime = new Date().toLocaleString();
@@ -18,6 +30,34 @@ function timer () {
     set.textContent = formattedString
 }
 setInterval(timer,1000)
+
+function handlelogin() {
+const loginUser = document.getElementById('input-name')
+const loginPass = document.getElementById('input-pass')
+
+if(loginUser.value < 1) {
+    return alert(`Username cannot be empty`)
+}else if (loginPass.value < 1) {
+    return alert(`Password cannot be empty`)
+}
+
+let body = {
+    userName: loginUser.value,
+    password: loginPass.value,
+}
+
+axios.post('http://localhost:4007/login', body)
+.then((res) => {
+    console.log(res.data)
+    window.location.replace("./home.html");
+    // alert(`logged in`)
+})
+.catch(err =>{
+    console.log(err)
+    alert(`Incorrect name or passcode, try again`) 
+})
+
+}
 
 function handleClockin(s) {
     s.preventDefault()
@@ -113,6 +153,8 @@ function clockoutDetails() {
 
 clockin.addEventListener('click', handleClockin)
 clockout.addEventListener('click', handleClockout)
+loginBtn.addEventListener('click', handlelogin)
+
 
 function revealBody() {
     detailsDisplay.classList.remove('hide')

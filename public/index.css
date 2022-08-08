@@ -125,6 +125,9 @@
 .menu ul li a:hover {
     color: var(--overlay-color);
 }
+#openPopup {
+    cursor: pointer;
+}
 
 form {
     display: flex;
@@ -181,7 +184,7 @@ form {
 .results div {
     margin-top: 60px;
     font-weight: bolder;
-    color: red;
+    /* color: red; */
 }
 
 .hide {
@@ -189,6 +192,73 @@ form {
 }
 
 
+
+/* .home-back {
+    background-color: #1a526c;
+} */
+
+.design {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 6px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.design label {
+    color: #111;
+    margin-top: 10px;
+}
+
+#close-foto {
+    width: 18px;
+    margin-top: 25px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#foto {
+    border-radius: 200px;
+    width: 150px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.design button {
+    width: 100px;
+    align-self: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #72a996;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
 
 /* .social {
     position: absolute;
