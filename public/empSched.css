@@ -1,0 +1,215 @@
+/* body {
+    font-family: Lato, sans-serif;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} */
+
+ /* just added */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+.header {
+    /* position: absolute; */
+    right: 0;
+    width: 100%;
+    height: 10vh;
+    background: #01474a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header .brand-name .logo {
+    display: flex;
+    color: aliceblue;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+}
+
+.header .brand-name .logo a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+.container .side-menu{
+    flex: 2;
+    background-color: #234a57;
+}
+.container .side-menu ul{
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+}
+.container .side-menu ul li{
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #004044;
+}
+
+.container .side-menu ul li:hover{
+    background: #004044;
+    cursor: pointer;
+}
+
+.container .admin-content{
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+    background: beige;
+}
+
+.tiii .page-title{
+    color: black;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+
+table {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px 0px darkgray;
+    background-color: white;
+    /* text-align: left; */
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr th {
+    background-color: darkolivegreen;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+table tr td {
+    padding: 1rem 2rem;
+}
+
+.tiii .page-titles{
+    color: black;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+
+/* #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5);
+    display: none;
+  } */
+
+
+.design {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 6px;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    
+}
+
+.open-popup {
+    position: absolute;
+    visibility: visible;
+    align-content: center;
+    margin-left: 17%;
+    width: 83%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+}
+
+.emp-add{
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    margin-bottom: 20px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+
+#close-foto {
+    width: 18px;
+    margin-top: 25px;
+    margin-right: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}

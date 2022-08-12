@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedules</title>
+    <link rel="stylesheet" href="sched.css">  
+</head>
+<body>
+
+    <div class="header">
+        <div class="brand-name">
+            <h1 class="logo"><a href="./index.html">MCPHAD</a></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side-menu">
+        <ul>
+            <li onclick="openPopup()" id="openPopup">Add Employee</li>
+            <li onclick="openPopupTwo()">Post Schedule</li>
+            <li>Salaries</li>
+        </ul>
+        </div>
+        <div class="admin-content">
+
+            <div class="tiii">
+                <h2 class="page-title">Employees Activies</h2>
+
+            <table id="clockin-tables">
+            <head>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee Id</th>
+                    <th>Timein</th>
+                    <th>Timeout</th>
+                    </tr>
+                </head>
+            </table>
+
+
+            <h2 class="page-titles">Employees Schedules</h2>
+
+            <table id="sched-tables">
+            <head>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee Id</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednessday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    </tr>
+                </head>
+            </table>
+        </div>
+
+        <div class="design" id="design">
+            <img src="/pop-up-close.png" id="close-foto" onclick="closePopup()"">
+            <div class="form-box">
+            <form class="input-group">
+                <h2 class="emp-add">Add new employee</h2>
+                <label for="firtname-input">New Id</label>
+                <input type="text" class="input-field" id="input-name"/>
+                <label for="pascode" class="createpass">Create Passcode:</label>
+                <input type="text" class="input-field" id="input-pass"/>
+                <button type="submit" class="submit-btn" id="popbtn">Add User</button>
+                
+            </form>
+            </div>
+        </div>
+
+      <div class="designs" id="designs">
+        <img src="/pop-up-close.png" id="close-foto" onclick="closePopups()"">
+        <div class="form-boxx">
+        <form class="input-groupp">
+            <h2 class="emp-add">Add new schedule</h2>
+            <label for="firtname-input">Employee name *</label>
+            <input type="text" class="input-field" id="name-inpt"/>
+            <label for="emp_id" class="emp_id">Employee ID *</label>
+            <input type="text" class="input-field" id="input_id"/>
+            <label for="emp_id" class="emp_id">Monday Schedule</label>
+            <input type="text" class="input-field" id="mon_input_id"/>
+            <label for="emp_id" class="emp_id">Tuesday Schedule</label>
+            <input type="text" class="input-field" id="tue_input_id"/>
+            <label for="emp_id" class="emp_id">Wednessday Schedule</label>
+            <input type="text" class="input-field" id="wed_input_id"/>
+            <label for="emp_id" class="emp_id">Thursday Schedule</label>
+            <input type="text" class="input-field" id="thur_input_id"/>
+            <label for="emp_id" class="emp_id">Friday Schedule</label>
+            <input type="text" class="input-field" id="fri_input_id"/>
+            <button type="submit" class="submit-btn" id="sched-btn">Add Schedule</button>
+            
+        </form>
+        </div>
+    </div>
+
+    </div>
+
+</div>
+
+    
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="sched.js"></script>
+</body>
+</html>

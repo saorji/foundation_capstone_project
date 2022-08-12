@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headers {
+    right: 0;
+    width: 100%;
+    height: 10vh;
+    background: #01474a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.headers .brand-names .logo {
+    color: aliceblue;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+}
+
+.headers .brand-names .logo a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.searchings{
+    width: 100%;
+}
+
+.searchings .section-contents{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.searchings .section-contents .search-bars {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+}
+
+.searchings .section-contents .search-bars input {
+    font-size: 1.4em;
+    padding: .6em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #004044;
+}
+
+.searchings .section-contents .search-bars button {
+    font-size: 1.5em;
+    background-color: #004044;
+    font-weight: 500;
+    border-radius: .4em;
+    word-spacing: 1px;
+    color: #F7FFF7;
+    cursor: pointer;
+
+}
+
+.searchings .section-contents .heading-todays{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.searchings .section-contents .heading-todays h2 {
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.searchings .section-contents .boxx-container{
+    border: none;
+    background: lightgrey;
+    height: auto;
+    padding: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.searchings .section-contents .boxx-container .title{
+    padding: 15px 20px;
+    margin-top: 0;
+    text-align: center;
+    color: rgb(149, 16, 16);
+}
+
+.searchings .section-contents .boxx-container .imgedit {
+    width: 80%;
+    margin-left: 100px;
+    
+}
+
+.searchings .section-contents .boxx-container .discription{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+.searchings .section-contents .boxx-container a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #004044;
+    padding: 8px;
+    margin-left: 20px;
+    color: #fff;
+    border-radius: .4em
+
+}

@@ -21,6 +21,7 @@
     color: #fff;
     z-index: 2;
     transition: 0.5s;
+    overflow-y: scroll;
 }
 
 .showcase.active {
@@ -191,12 +192,6 @@ form {
     visibility: hidden;
 }
 
-
-
-/* .home-back {
-    background-color: #1a526c;
-} */
-
 .design {
     display: flex;
     flex-direction: column;
@@ -259,28 +254,3 @@ form {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     
 }
-
-/* .social {
-    position: absolute;
-    bottom: 20px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social li {
-    list-style: none;
-}
-
-.social li a {
-    display: inline-block;
-   filter: invert(1);
-   margin-right: 20px;
-   transform: scale(0.1);
-   transition: 0.5s;
-}
-
-.social li a:hover {
-    transform: scale(0.5) translateY(-15px);
-} */
