@@ -106,6 +106,7 @@ values (2, 'Mark', 'markpassCode');
                 if(dbRez[0].length > 0){
                     throw `You must clockout first to login`
                 }
+                //if authent is successful
                     sequelize
             .query(
               `
@@ -126,6 +127,7 @@ values (2, 'Mark', 'markpassCode');
                 res.status(400).send(err)
             })
         }else {
+          //if name or passcode don't match
             return res.status(400).send(`Incorrect username or password`);
         }
         
@@ -171,11 +173,6 @@ values (2, 'Mark', 'markpassCode');
                 // and clocks_id = (select MAX(clocks_id) from clocks)
             )
             .then((dbResponse) => {
-            //   sequelize.query(`
-            //     select * from clocks
-            //     where clock_name = ${dbResponse[0][0].clock_name}
-            //     and clocks_id = (select MAX(clocks_id) from clocks)
-            //      `);
               console.log(dbResponse[0]);
                 res.status(200).send('success');
                 return;

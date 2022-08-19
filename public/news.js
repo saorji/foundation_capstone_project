@@ -1,12 +1,7 @@
-// const button = document.getElementById('tbdis')
-// const search = document.getElementById('search')
-// const result = document.getElementById('result')
 const newsss = document.getElementById('newsss')
-
 const searchResult = document.getElementById('newwsss')
 const searchInp = document.getElementById('searchInp')
 const userSearchBtnn = document.getElementById('searchBtn')
-// const searchInpMain = document.getElementById('searchInpp')
 const mainBtnSearch = document.getElementById('mainBtnSearch')
 
 
